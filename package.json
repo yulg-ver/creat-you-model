@@ -5,13 +5,13 @@
   "description": "Upload a photo and use AI to generate a realistic 1/6 scale commercial doll of the person, set in a real environment with a behind-the-scenes look at its digital creation in Blender.",
   "scripts": {
     "dev": "echo \"Development server running...\"",
-    "build": "echo \"Building for production...\"",
+    "build": "npm install @remix-run/dev @remix-run/react vite",
     "start": "echo \"Starting production server...\""
   },
   "dependencies": {
-    "@google/genai": "^1.16.0",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "dev": "remix vite:dev",
+    "build": "remix vite:build",
+    "start": "remix-serve ./build"
   },
   "keywords": [
     "ai",
