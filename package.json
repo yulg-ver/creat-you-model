@@ -1,26 +1,21 @@
 {
   "name": "dollify-me-ai",
-  "version": "1.1.0",
   "private": true,
-  "description": "Upload a photo and use AI to generate a realistic 1/6 scale commercial doll of the person, set in a real environment with a behind-the-scenes look at its digital creation in Blender.",
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "remix vite:dev",
-    "build": "remix vite:build",
-    "start": "remix-serve ./build"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@google/genai": "^1.16.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "@remix-run/dev": "^2.11.2",
-    "@remix-run/react": "^2.11.2",
-    "vite": "^5.4.2"
+    "@google/genai": "^1.16.0"
   },
-  "keywords": [
-    "ai",
-    "gemini",
-    "react",
-    "dolls",
-    "image-generation"
-  ]
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
 }
