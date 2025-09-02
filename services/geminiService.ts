@@ -8,10 +8,11 @@ if (!API_KEY) {
 
 const ai = new GoogleGenAI({ apiKey: API_KEY });
 
-export async function generateDollImage(base64ImageData: string, mimeType: string): Promise<string> {
+export async function generateDollImage(base64ImageData: string, mimeType: string, pose: string): Promise<string> {
   const model = 'gemini-2.5-flash-image-preview';
 
   const prompt = `Transform the person in this image into a highly realistic, 1/6 scale commercial doll.
+The doll should be in the following pose: ${pose}.
 Place the doll in a real-world environment, like a modern, well-lit studio or a stylish room.
 The doll should have lifelike textures for its skin, hair, and clothing.
 Around the doll, add a sleek, technological-style robotic arm, as if it's involved in the 3D printing or final assembly of the doll.

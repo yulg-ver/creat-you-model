@@ -104,3 +104,23 @@ export const DownloadIcon: React.FC = () => (
         <line x1="12" y1="4" x2="12" y2="16" />
     </svg>
 );
+
+export const PoseIcon: React.FC = () => (
+    <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        className="h-6 w-6 text-gray-300" 
+        viewBox="0 0 24 24" 
+        strokeWidth="2" 
+        stroke="currentColor" 
+        fill="none" 
+        strokeLinecap="round" 
+        strokeLinejoin="round"
+    >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <circle cx="12" cy="5" r="1" />
+        <path d="M12 12v-6" />
+        <path d="M12 12l-3 -2" />
+        <path d="M12 12l3 -2" />
+        <path d="M12 12l-1 5h2" />
+    </svg>
+);
